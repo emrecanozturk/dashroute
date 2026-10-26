@@ -1,5 +1,5 @@
 /* DashRoute web pages. Colors follow Rota/DesignSystem/Tokens.swift (land, surface, text, muted, accentText).
-   The app shows these pages in its own sheet and hides [data-web-only] there (WebPageView.swift). */
+   The app shows these pages in its own sheet and hides [data-web-only] there (Rota/Features/Settings/SitePageSheet.swift). */
 :root{--bg:#eceef1;--card:#fff;--text:#1b1d1f;--muted:#5c6064;--accent:#1d5fd6;--line:#dfe2e6}
 @media (prefers-color-scheme:dark){:root{--bg:#121417;--card:#22262b;--text:#f2f3f5;--muted:#a3a7ac;--accent:#8ab4ff;--line:#2e3238}}
 *{box-sizing:border-box}
