@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <title>DashRoute Privacy Policy</title>
-<meta name="description" content="DashRoute privacy policy: no account, no ads, no tracking. Video, routes and events stay on your iPhone; only usage statistics and purchase records tied to a random ID, never your name or email, are collected.">
+<meta name="description" content="DashRoute privacy policy: no account, no ads, no tracking. Video, routes and events stay on your iPhone; only usage statistics, crash reports and purchase records tied to a random ID, never your name or email, are collected.">
 <link rel="canonical" href="https://emrecanozturk.github.io/dashroute/privacy">
 <link rel="alternate" hreflang="en" href="https://emrecanozturk.github.io/dashroute/privacy">
 <link rel="alternate" hreflang="tr" href="https://emrecanozturk.github.io/dashroute/tr/privacy">
@@ -18,8 +18,8 @@
 <main>
 <nav class="site" data-web-only><a class="brand" href="index.html"><img src="assets/apple-touch-icon.png" alt="" width="28" height="28">DashRoute</a><span><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a><a href="tr/privacy.html" lang="tr" hreflang="tr">Türkçe</a></span></nav>
 <header><h1>Privacy Policy</h1></header>
-<p class="muted">DashRoute · last updated 26 October 2026</p>
-<p>DashRoute is a dash cam app for iPhone made by Emrecan Öztürk, an independent developer in Istanbul, Türkiye (“we”). The short version: <strong>DashRoute has no account, no advertising and no tracking, and we never sell your data. Your videos, routes and events stay on your iPhone.</strong> To improve the app, DashRoute collects usage statistics (Google Firebase Analytics) and records purchases (RevenueCat), tied to a random ID, never to your name or email. These never include video, audio, your precise location or route, license plates or anything you type, and you can turn usage statistics off in the app.</p>
+<p class="muted">DashRoute · last updated 27 October 2026</p>
+<p>DashRoute is a dash cam app for iPhone made by Emrecan Öztürk, an independent developer in Istanbul, Türkiye (“we”). The short version: <strong>DashRoute has no account, no advertising and no tracking, and we never sell your data. Your videos, routes and events stay on your iPhone.</strong> To improve the app, DashRoute collects usage statistics and crash reports (Google Firebase) and records purchases (RevenueCat), tied to a random ID, never to your name or email. These never include video, audio, your precise location or route, license plates or anything you type, and you can turn usage statistics off in the app.</p>
 
 <h2>What stays on your iPhone</h2>
 <p>Everything DashRoute records is stored only in the app's own storage on your device: video segments, GPS routes, speed, detected events (hard braking, impacts, bumps, possible crashes), trip names and the clips or PDF reports you prepare. We never see or receive any of it. Deleting the app deletes all of it.</p>
@@ -27,10 +27,10 @@
 <h2>Permissions and what they are used for</h2>
 <dl>
 <dt>Camera</dt><dd>To record the road (and, if you enable the cabin camera, the cabin). Recording happens only while the app is open on screen.</dd>
-<dt>Location (while using the app)</dt><dd>To draw your route, match the video to the map and show speed. Location is used only while recording and stays on the device, except for the few points used to name streets (see below).</dd>
+<dt>Location (while using the app)</dt><dd>To draw your route, match the video to the map and show speed. Location is used only while recording and stays on the device, except for the few points used to name streets and the city where each trip starts and ends (see below).</dd>
 <dt>Microphone (optional)</dt><dd>Only if you turn on cabin audio. If you don't grant it, video is recorded without sound.</dd>
 <dt>Motion sensors</dt><dd>To detect hard braking, impacts and bumps on the device while recording.</dd>
-<dt>Notifications (optional)</dt><dd>To tell you when storage is low, when recording stopped, or when a protected event is about to be cleared.</dd>
+<dt>Notifications (optional)</dt><dd>To tell you when storage is low, when recording stopped, or when a protected event is about to be cleared, and occasionally for app announcements and reminders (Firebase Cloud Messaging). You can turn notifications off at any time in iOS Settings.</dd>
 <dt>Photos (add only)</dt><dd>Only to save a clip you made to your Photos library when you ask for it.</dd>
 </dl>
 
@@ -41,21 +41,28 @@
 <h3>Usage statistics</h3>
 <p>DashRoute uses Google Firebase Analytics to understand how the app is used. It collects:</p>
 <ul>
-<li>a random app-instance identifier created on install, and the random RevenueCat customer ID used to connect usage statistics with purchase records (neither contains your name, email or Apple Account);</li>
+<li>a random user ID created on install and Firebase's random app-instance identifier; the same user ID is used in RevenueCat and on App Store purchase records to connect usage statistics with purchases (none of them contains your name, email or Apple Account, and a new one is created if you reinstall the app);</li>
 <li>device model, iOS version, app version, app language and App Store country;</li>
 <li>a coarse region (country, region or city) that Google derives from your IP address; we never receive or store your IP address;</li>
-<li>in-app events and screens: for example which screens you open, onboarding steps and permission answers, when a recording starts or stops (with duration and distance rounded or grouped into ranges), the type of a detected event with its peak g-force and a speed range, clip exports and shares (only the kind of destination, such as AirDrop or Messages), paywall views and purchase taps, and error codes;</li>
-<li>your settings choices (such as video quality, recording mode, speed unit, sensitivity, plate blur), the optional onboarding answers about how you drive, and the number of trips and protected events grouped into ranges;</li>
+<li>the city (in Türkiye, the province) and country where each trip starts and ends. These are worked out on the device from the Apple geocoding already used for street names; no coordinates, addresses, districts, streets or routes are sent;</li>
+<li>in-app events and screens: for example which screens you open, onboarding steps and permission answers, when a recording starts or stops (with duration and distance rounded or grouped into ranges, the trip's sequence number, start hour and speed ranges), time spent on screens and in flows, notifications sent and opened, the type of a detected event with its peak g-force and a speed range, clip exports and shares (only the kind of destination, such as AirDrop or Messages), paywall views and purchase taps, and error codes;</li>
+<li>your settings choices (such as video quality, recording mode, speed unit, sensitivity, plate blur), the optional onboarding answers about how you drive, the status of camera, location and notification permissions, and the number of trips and protected events grouped into ranges;</li>
 <li>purchase events (product, price and currency, trial start, purchase result and changes to your Pro status).</li>
 </ul>
 
+<h3>Crash reports</h3>
+<p>When the app crashes or catches a significant error, Google Firebase Crashlytics sends where it happened (the stack trace) and its code, device model, iOS and app version, state such as free memory and disk space, the most recent app events, and the random user ID. Video, file names, location and anything you type are never sent.</p>
+
+<h3>Notification token</h3>
+<p>To deliver remote notifications, Firebase Cloud Messaging gives your device a random notification token; it is used only to deliver notifications.</p>
+
 <h3>Purchase records</h3>
-<p>DashRoute Pro is sold through Apple's App Store as a monthly or yearly auto-renewing subscription or as a one-time lifetime purchase. Apple processes the payment; we never see your payment details. RevenueCat records the purchase for us: the random RevenueCat customer ID, the App Store transaction details (product, price and currency, purchase, renewal and expiry dates, trial, cancellation and refund status), your App Store country, basic device and app information, and the Firebase app-instance identifier so both records describe the same user, known to us only by these random IDs.</p>
+<p>DashRoute Pro is sold through Apple's App Store as a monthly or yearly auto-renewing subscription or as a one-time lifetime purchase. Apple processes the payment; we never see your payment details. RevenueCat records the purchase for us: the random user ID, the App Store transaction details (product, price and currency, purchase, renewal and expiry dates, trial, cancellation and refund status), your App Store country, basic device and app information, the Firebase app-instance identifier so both records describe the same user, and a copy of the usage properties above (such as language, country, recording mode, permission status and counts grouped into ranges), known to us only by these random IDs.</p>
 
 <h2>What we never collect</h2>
 <ul>
 <li>Video, audio, photos or frames, and file names.</li>
-<li>Precise location, GPS coordinates, routes, addresses, street or place names.</li>
+<li>Precise location, GPS coordinates, routes, addresses, district or street names (for trips, only the start and end city is sent).</li>
 <li>License plates or anything recognized in your video.</li>
 <li>Anything you type: trip names, search text, report notes.</li>
 <li>Your name, email, phone number, contacts, Apple Account or device name.</li>
@@ -63,14 +70,14 @@
 </ul>
 
 <h2>How the App Store label describes this</h2>
-<p>DashRoute's App Store privacy label lists usage data (product interaction), purchases, identifiers (user ID and device ID), coarse location and other diagnostic data as <strong>“Data Linked to You”</strong>, used for analytics, and purchases also for app functionality. They count as linked because they are tied to the random app and user IDs above, which stay the same over time; they are pseudonymous, not anonymous, and they never contain your name or email. None of this data is used for tracking or advertising.</p>
+<p>DashRoute's App Store privacy label lists usage data (product interaction), purchases, identifiers (user ID and device ID), coarse location, crash data and other diagnostic data as <strong>“Data Linked to You”</strong>, used for analytics, and purchases and the device ID also for app functionality. They count as linked because they are tied to the random app and user IDs above, which stay the same over time; they are pseudonymous, not anonymous, and they never contain your name or email. None of this data is used for tracking or advertising.</p>
 
 <h2>Why we use this data</h2>
 <p>To improve the app: to see where onboarding, recording and the paywall work or fail, to find errors, to decide what to build next, to report revenue, and to handle refunds, fraud and purchase problems. We don't use it for advertising.</p>
 
 <h2>Who processes it</h2>
 <dl>
-<dt>Google LLC</dt><dd>Firebase Analytics, usage statistics. <a href="https://firebase.google.com/support/privacy">Firebase privacy and security</a> · <a href="https://policies.google.com/privacy">Google privacy policy</a></dd>
+<dt>Google LLC</dt><dd>Firebase Analytics, Crashlytics and Cloud Messaging: usage statistics, crash reports and notification delivery. <a href="https://firebase.google.com/support/privacy">Firebase privacy and security</a> · <a href="https://policies.google.com/privacy">Google privacy policy</a></dd>
 <dt>RevenueCat, Inc.</dt><dd>Purchase and subscription records. <a href="https://www.revenuecat.com/privacy">RevenueCat privacy policy</a></dd>
 <dt>Apple</dt><dd>Payments, App Store, street-name lookup and maps. <a href="https://www.apple.com/legal/privacy/">Apple privacy policy</a></dd>
 </dl>
@@ -80,10 +87,10 @@
 <p>If you are in the EU or the UK: we process usage statistics on the basis of our legitimate interest in understanding and improving the app (Art. 6(1)(f) GDPR / UK GDPR), and you can object at any time with the in-app switch; we process purchase records to perform our contract with you (Art. 6(1)(b)). In Türkiye: KVKK article 5(2)(c) (necessary for the performance of a contract) for purchase records and article 5(2)(f) (legitimate interest) for usage statistics.</p>
 
 <h2>How long it is kept</h2>
-<p>Google Analytics event data is kept for 14 months and then deleted automatically. RevenueCat purchase records are kept as long as needed for accounting, tax and refund handling.</p>
+<p>Google Analytics event data (including the copy exported to Google BigQuery for analysis) is kept for at most 14 months and then deleted automatically. Crashlytics crash reports are kept for 90 days. RevenueCat purchase records are kept as long as needed for accounting, tax and refund handling.</p>
 
 <h2>Turning statistics off</h2>
-<p>In DashRoute, open Settings → Privacy and turn off <em>Usage statistics</em>. From then on DashRoute sends no usage events to Google. Purchase records are still kept by Apple and RevenueCat, because they are needed to provide and account for your purchase. Deleting the app also stops all collection.</p>
+<p>In DashRoute, open Settings → Privacy and turn off <em>Usage statistics</em>. From then on DashRoute sends no usage events to Google and no usage properties to RevenueCat; crash reports stop from the next app launch. Purchase records are still kept by Apple and RevenueCat, because they are needed to provide and account for your purchase. Deleting the app also stops all collection.</p>
 
 <h2>Sharing</h2>
 <p>A clip, route or report leaves your iPhone only when you share it yourself, through the standard iOS share sheet, Photos or Files. Before sharing you can blur license plates (Pro), and turn off the speed and location label, the route map and the cabin picture. You are responsible for what you share and for complying with local laws on recording and publishing footage.</p>

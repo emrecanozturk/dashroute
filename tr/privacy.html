@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <title>DashRoute Gizlilik Politikası</title>
-<meta name="description" content="DashRoute gizlilik politikası: hesap, reklam ve takip yok. Video, rota ve olaylar iPhone’unda kalır; yalnızca adına ya da e-postana değil, rastgele bir kimliğe bağlı kullanım istatistikleri ve satın alma kayıtları toplanır.">
+<meta name="description" content="DashRoute gizlilik politikası: hesap, reklam ve takip yok. Video, rota ve olaylar iPhone’unda kalır; yalnızca adına ya da e-postana değil, rastgele bir kimliğe bağlı kullanım istatistikleri, çökme raporları ve satın alma kayıtları toplanır.">
 <link rel="canonical" href="https://emrecanozturk.github.io/dashroute/tr/privacy">
 <link rel="alternate" hreflang="en" href="https://emrecanozturk.github.io/dashroute/privacy">
 <link rel="alternate" hreflang="tr" href="https://emrecanozturk.github.io/dashroute/tr/privacy">
@@ -18,8 +18,8 @@
 <main>
 <nav class="site" data-web-only><a class="brand" href="index.html"><img src="../assets/apple-touch-icon.png" alt="" width="28" height="28">DashRoute</a><span><a href="privacy.html" aria-current="page">Gizlilik</a><a href="terms.html">Koşullar</a><a href="support.html">Destek</a><a href="../privacy.html" lang="en" hreflang="en">English</a></span></nav>
 <header><h1>Gizlilik Politikası</h1></header>
-<p class="muted">DashRoute · son güncelleme 26 Ekim 2026</p>
-<p>DashRoute, İstanbul'da bağımsız geliştirici Emrecan Öztürk (“biz”) tarafından yapılmış bir iPhone araç kamerası uygulamasıdır. Kısaca: <strong>DashRoute'ta hesap, reklam ve takip yoktur; verilerini asla satmayız. Videoların, rotaların ve olayların telefonunda kalır.</strong> Uygulamayı iyileştirmek için DashRoute kullanım istatistikleri toplar (Google Firebase Analytics) ve satın alımları kaydeder (RevenueCat); bunlar adına ya da e-postana değil, rastgele bir kimliğe bağlıdır. Bunlarda video, ses, kesin konumun ya da rotan, plakalar ve yazdığın hiçbir şey yer almaz; kullanım istatistiklerini uygulamadan kapatabilirsin.</p>
+<p class="muted">DashRoute · son güncelleme 27 Ekim 2026</p>
+<p>DashRoute, İstanbul'da bağımsız geliştirici Emrecan Öztürk (“biz”) tarafından yapılmış bir iPhone araç kamerası uygulamasıdır. Kısaca: <strong>DashRoute'ta hesap, reklam ve takip yoktur; verilerini asla satmayız. Videoların, rotaların ve olayların telefonunda kalır.</strong> Uygulamayı iyileştirmek için DashRoute kullanım istatistikleri ve çökme raporları toplar (Google Firebase) ve satın alımları kaydeder (RevenueCat); bunlar adına ya da e-postana değil, rastgele bir kimliğe bağlıdır. Bunlarda video, ses, kesin konumun ya da rotan, plakalar ve yazdığın hiçbir şey yer almaz; kullanım istatistiklerini uygulamadan kapatabilirsin.</p>
 
 <h2>Telefonunda kalanlar</h2>
 <p>DashRoute'un kaydettiği her şey yalnızca cihazındaki uygulama alanında saklanır: video parçaları, GPS rotaları, hız, algılanan olaylar (sert fren, darbe, sarsıntı, olası kaza), yolculuk adları ve hazırladığın klipler ile PDF raporlar. Bunların hiçbirini görmeyiz, almayız. Uygulamayı silmek hepsini siler.</p>
@@ -27,10 +27,10 @@
 <h2>İzinler ve ne için kullanıldıkları</h2>
 <dl>
 <dt>Kamera</dt><dd>Yolu (kabin kamerasını açarsan kabini de) kaydetmek için. Kayıt yalnızca uygulama ekranda açıkken yapılır.</dd>
-<dt>Konum (uygulamayı kullanırken)</dt><dd>Rotayı çizmek, videoyu haritayla eşlemek ve hızı göstermek için. Yalnızca kayıt sırasında kullanılır ve cihazda kalır; tek istisna sokak adları için kullanılan birkaç noktadır (aşağıda).</dd>
+<dt>Konum (uygulamayı kullanırken)</dt><dd>Rotayı çizmek, videoyu haritayla eşlemek ve hızı göstermek için. Yalnızca kayıt sırasında kullanılır ve cihazda kalır; tek istisnalar sokak adları için kullanılan birkaç nokta ve yolculuğun başladığı ve bittiği şehirdir (aşağıda).</dd>
 <dt>Mikrofon (isteğe bağlı)</dt><dd>Yalnızca kabin sesini açarsan. Vermezsen video sessiz kaydedilir.</dd>
 <dt>Hareket sensörleri</dt><dd>Kayıt sırasında sert fren, darbe ve sarsıntıyı cihazda algılamak için.</dd>
-<dt>Bildirimler (isteğe bağlı)</dt><dd>Yer azalınca, kayıt durunca ya da korunan bir olayın koruması kalkacakken haber vermek için.</dd>
+<dt>Bildirimler (isteğe bağlı)</dt><dd>Yer azalınca, kayıt durunca ya da korunan bir olayın koruması kalkacakken haber vermek için; ayrıca seyrek olarak uygulamayla ilgili duyuru ve hatırlatmalar için (Firebase Cloud Messaging). Bildirimleri iOS Ayarlar'dan dilediğin an kapatabilirsin.</dd>
 <dt>Fotoğraflar (yalnızca ekleme)</dt><dd>Sen istediğinde hazırladığın klibi Fotoğraflar'a kaydetmek için.</dd>
 </dl>
 
@@ -38,19 +38,22 @@
 <p><strong>Sokak adları.</strong> Sokak ve yolculuk adları için DashRoute rotandan birkaç koordinatı Apple'ın adres çözümleme hizmetine (Apple Haritalar'ın kullandığı hizmet) gönderir. Video, rotanın tamamı ve olayların hiçbir zaman gönderilmez. Harita görüntüleri Apple Haritalar'dan gelir ve <a href="https://www.apple.com/tr/legal/privacy/">Apple'ın gizlilik politikasına</a> tabidir.</p>
 <p><strong>Kullanım istatistikleri.</strong> DashRoute, uygulamanın nasıl kullanıldığını anlamak için Google Firebase Analytics kullanır. Toplananlar:</p>
 <ul>
-<li>kurulumda oluşan rastgele bir uygulama kimliği ve kullanım istatistiklerini satın alma kayıtlarıyla eşleştiren, yine rastgele RevenueCat müşteri kimliği (ikisi de adını, e-postanı ya da Apple Hesabını içermez);</li>
+<li>kurulumda oluşan rastgele bir kullanıcı kimliği ve Firebase'in rastgele uygulama kimliği; kullanıcı kimliği, kullanım istatistiklerini satın alma kayıtlarıyla eşleştirmek için RevenueCat'te ve App Store satın alma kaydında da aynıdır (hiçbiri adını, e-postanı ya da Apple Hesabını içermez; uygulamayı silip yeniden kurunca yenisi oluşur);</li>
 <li>cihaz modeli, iOS sürümü, uygulama sürümü, uygulama dili ve App Store ülkesi;</li>
 <li>Google'ın IP adresinden çıkardığı kaba bölge (ülke, bölge ya da şehir); IP adresini biz hiçbir zaman almayız ve saklamayız;</li>
-<li>uygulama içi olaylar ve ekranlar: örneğin hangi ekranları açtığın, onboarding adımları ve izin cevapları, kaydın başlaması ya da durması (süre ve mesafe yuvarlanmış ya da aralıklara ayrılmış olarak), algılanan olayın türü, tepe ivmesi ve hız aralığı, klip dışa aktarma ve paylaşımları (yalnızca AirDrop ya da Mesajlar gibi hedef türü), ödeme ekranı görüntülemeleri ve satın alma dokunuşları, hata kodları;</li>
-<li>ayar seçimlerin (video kalitesi, kayıt modu, hız birimi, hassasiyet, plaka bulanıklaştırma gibi), onboarding'deki isteğe bağlı sürüş soruları ve aralıklara ayrılmış yolculuk ve korunan olay sayısı;</li>
+<li>her yolculuğun başladığı ve bittiği şehir (Türkiye'de il) ve ülke. Bunlar sokak adları için zaten yapılan Apple adres çözümlemesinden cihazda çıkarılır; koordinat, adres, semt, sokak ya da rota gönderilmez;</li>
+<li>uygulama içi olaylar ve ekranlar: örneğin hangi ekranları açtığın, onboarding adımları ve izin cevapları, kaydın başlaması ya da durması (süre ve mesafe yuvarlanmış ya da aralıklara ayrılmış olarak; kaçıncı yolculuk olduğu, başlangıç saati ve hız aralıkları), ekranlarda ve akışlarda geçen süre, bildirimlerin gönderilip açılması, algılanan olayın türü, tepe ivmesi ve hız aralığı, klip dışa aktarma ve paylaşımları (yalnızca AirDrop ya da Mesajlar gibi hedef türü), ödeme ekranı görüntülemeleri ve satın alma dokunuşları, hata kodları;</li>
+<li>ayar seçimlerin (video kalitesi, kayıt modu, hız birimi, hassasiyet, plaka bulanıklaştırma gibi), onboarding'deki isteğe bağlı sürüş soruları, kamera, konum ve bildirim izinlerinin durumu ve aralıklara ayrılmış yolculuk ve korunan olay sayısı;</li>
 <li>satın alma olayları (ürün, fiyat ve para birimi, deneme başlangıcı, satın alma sonucu ve Pro durumundaki değişiklikler).</li>
 </ul>
-<p><strong>Satın alma kayıtları.</strong> DashRoute Pro, Apple App Store üzerinden aylık ya da yıllık otomatik yenilenen abonelik veya tek seferlik ömür boyu satın alma olarak satılır. Ödemeyi Apple işler; ödeme bilgilerini görmeyiz. Satın almayı bizim için RevenueCat kaydeder: rastgele RevenueCat müşteri kimliği, App Store işlem bilgileri (ürün, fiyat ve para birimi, satın alma, yenileme ve bitiş tarihleri, deneme, iptal ve iade durumu), App Store ülkesi, temel cihaz ve uygulama bilgileri ve iki kaydın aynı kullanıcıyı anlatması için Firebase uygulama kimliği; bu kullanıcıyı yalnızca bu rastgele kimliklerle biliriz.</p>
+<p><strong>Çökme raporları.</strong> Uygulama çöktüğünde ya da önemli bir hata yakalandığında Google Firebase Crashlytics şunları gönderir: hatanın yeri (yığın izi) ve kodu, cihaz modeli, iOS ve uygulama sürümü, bellek ve disk gibi o anki durum bilgisi, son uygulama olayları ve rastgele kullanıcı kimliği. Video, dosya adları, konum ve yazdığın metinler gönderilmez.</p>
+<p><strong>Bildirim belirteci.</strong> Uzak bildirim gönderebilmek için Firebase Cloud Messaging cihazına rastgele bir bildirim belirteci verir; yalnızca bildirimi iletmek için kullanılır.</p>
+<p><strong>Satın alma kayıtları.</strong> DashRoute Pro, Apple App Store üzerinden aylık ya da yıllık otomatik yenilenen abonelik veya tek seferlik ömür boyu satın alma olarak satılır. Ödemeyi Apple işler; ödeme bilgilerini görmeyiz. Satın almayı bizim için RevenueCat kaydeder: rastgele kullanıcı kimliği, App Store işlem bilgileri (ürün, fiyat ve para birimi, satın alma, yenileme ve bitiş tarihleri, deneme, iptal ve iade durumu), App Store ülkesi, temel cihaz ve uygulama bilgileri iki kaydın aynı kullanıcıyı anlatması için Firebase uygulama kimliği ve yukarıdaki kullanım özelliklerinin bir kopyası (ör. dil, ülke, kayıt modu, izin durumları, aralıklara ayrılmış sayılar); bu kullanıcıyı yalnızca bu rastgele kimliklerle biliriz.</p>
 
 <h2>Hiçbir zaman toplamadıklarımız</h2>
 <ul>
 <li>Video, ses, fotoğraf ya da kare ve dosya adları.</li>
-<li>Kesin konum, GPS koordinatları, rotalar, adresler, sokak ve yer adları.</li>
+<li>Kesin konum, GPS koordinatları, rotalar, adresler, semt ve sokak adları (yolculuk için yalnızca başlangıç ve bitiş şehri gönderilir).</li>
 <li>Plakalar ya da videoda tanınan herhangi bir şey.</li>
 <li>Yazdığın her şey: yolculuk adları, arama metni, rapor notları.</li>
 <li>Adın, e-postan, telefon numaran, kişilerin, Apple Hesabın ya da cihaz adın.</li>
@@ -58,14 +61,14 @@
 </ul>
 
 <h2>App Store etiketi bunu nasıl gösteriyor</h2>
-<p>DashRoute'un App Store gizlilik etiketinde kullanım verisi (ürün etkileşimi), satın almalar, tanımlayıcılar (kullanıcı kimliği ve cihaz kimliği), kaba konum ve diğer tanılama verileri <strong>“Sana Bağlı Veriler”</strong> olarak, analiz amacıyla (satın almalar ayrıca uygulama işlevi için) listelenir. Bağlı sayılırlar çünkü yukarıdaki, zamanla değişmeyen rastgele uygulama ve kullanıcı kimliklerine bağlıdırlar; anonim değil takma adlıdırlar ve adını ya da e-postanı asla içermezler. Bu verilerin hiçbiri takip ya da reklam için kullanılmaz.</p>
+<p>DashRoute'un App Store gizlilik etiketinde kullanım verisi (ürün etkileşimi), satın almalar, tanımlayıcılar (kullanıcı kimliği ve cihaz kimliği), kaba konum, çökme verileri ve diğer tanılama verileri <strong>“Sana Bağlı Veriler”</strong> olarak, analiz amacıyla (satın almalar ve cihaz kimliği ayrıca uygulama işlevi için) listelenir. Bağlı sayılırlar çünkü yukarıdaki, zamanla değişmeyen rastgele uygulama ve kullanıcı kimliklerine bağlıdırlar; anonim değil takma adlıdırlar ve adını ya da e-postanı asla içermezler. Bu verilerin hiçbiri takip ya da reklam için kullanılmaz.</p>
 
 <h2>Neden kullanıyoruz</h2>
 <p>Uygulamayı iyileştirmek için: onboarding, kayıt ve ödeme ekranının nerede işe yarayıp nerede takıldığını görmek, hataları bulmak, sırada ne yapılacağına karar vermek, gelir raporlamak ve iade, dolandırıcılık ve satın alma sorunlarını çözmek. Reklam için kullanmayız.</p>
 
 <h2>Veriyi kim işler</h2>
 <dl>
-<dt>Google LLC</dt><dd>Firebase Analytics, kullanım istatistikleri. <a href="https://firebase.google.com/support/privacy">Firebase gizlilik ve güvenlik</a> · <a href="https://policies.google.com/privacy?hl=tr">Google gizlilik politikası</a></dd>
+<dt>Google LLC</dt><dd>Firebase Analytics, Crashlytics ve Cloud Messaging: kullanım istatistikleri, çökme raporları ve bildirim iletimi. <a href="https://firebase.google.com/support/privacy">Firebase gizlilik ve güvenlik</a> · <a href="https://policies.google.com/privacy?hl=tr">Google gizlilik politikası</a></dd>
 <dt>RevenueCat, Inc.</dt><dd>Satın alma ve abonelik kayıtları. <a href="https://www.revenuecat.com/privacy">RevenueCat gizlilik politikası</a></dd>
 <dt>Apple</dt><dd>Ödeme, App Store, sokak adı çözümleme ve harita. <a href="https://www.apple.com/tr/legal/privacy/">Apple gizlilik politikası</a></dd>
 </dl>
@@ -75,10 +78,10 @@
 <p>Türkiye'de: satın alma kayıtları için KVKK md. 5/2-c (bir sözleşmenin kurulması veya ifasıyla doğrudan ilgili olması), kullanım istatistikleri için md. 5/2-f (veri sorumlusunun meşru menfaati). AB ve Birleşik Krallık'ta: kullanım istatistikleri uygulamayı anlama ve iyileştirmedeki meşru menfaatimize (GDPR / UK GDPR md. 6(1)(f)) dayanır ve uygulama içindeki anahtarla dilediğin an itiraz edebilirsin; satın alma kayıtları seninle yaptığımız sözleşmenin ifası içindir (md. 6(1)(b)).</p>
 
 <h2>Ne kadar saklanır</h2>
-<p>Google Analytics olay verileri 14 ay saklanır, sonra kendiliğinden silinir. RevenueCat satın alma kayıtları muhasebe, vergi ve iade işlemleri için gerektiği sürece saklanır.</p>
+<p>Google Analytics olay verileri (analiz için Google BigQuery'ye aktarılan kopyası dahil) en fazla 14 ay saklanır, sonra kendiliğinden silinir. Crashlytics çökme raporları 90 gün saklanır. RevenueCat satın alma kayıtları muhasebe, vergi ve iade işlemleri için gerektiği sürece saklanır.</p>
 
 <h2>İstatistikleri kapatmak</h2>
-<p>DashRoute'ta Ayarlar → Gizlilik'i aç ve <em>Kullanım istatistikleri</em>'ni kapat. O andan sonra DashRoute Google'a hiçbir kullanım olayı göndermez. Satın alma kayıtları, satın alımını sağlamak ve kayda geçirmek için gerekli olduğundan Apple ve RevenueCat'te tutulmaya devam eder. Uygulamayı silmek de her türlü toplamayı durdurur.</p>
+<p>DashRoute'ta Ayarlar → Gizlilik'i aç ve <em>Kullanım istatistikleri</em>'ni kapat. O andan sonra DashRoute Google'a hiçbir kullanım olayı, RevenueCat'e de kullanım özelliği göndermez; çökme raporları da uygulamanın bir sonraki açılışından itibaren durur. Satın alma kayıtları, satın alımını sağlamak ve kayda geçirmek için gerekli olduğundan Apple ve RevenueCat'te tutulmaya devam eder. Uygulamayı silmek de her türlü toplamayı durdurur.</p>
 
 <h2>Paylaşım</h2>
 <p>Bir klip, rota ya da rapor telefonundan yalnızca sen paylaştığında, iOS paylaşım menüsü, Fotoğraflar ya da Dosyalar üzerinden çıkar. Paylaşmadan önce plakaları bulanıklaştırabilir (Pro), hız/konum etiketini, rota haritasını ve kabin görüntüsünü kapatabilirsin. Paylaştığın içerikten ve kayıt/yayın konusundaki yerel kurallara uymaktan sen sorumlusun.</p>
